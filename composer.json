@@ -4,7 +4,6 @@
     "keywords": ["aliyun", "aliyun-sms", "lumen", "sms", "sdk"],
     "require": {
         "php": ">5.3",
-        "yeoman/aliyun-sms": "*"
     },
     "autoload": {
         "psr-4": {
@@ -17,7 +16,7 @@
     "authors": [
         {
             "name": "Yeoman",
-            "email": "fast042@164.com"
+            "email": "fast042@163.com"
         }
     ]
 }

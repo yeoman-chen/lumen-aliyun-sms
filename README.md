@@ -1,7 +1,4 @@
 # lumen-aliyun-sms
-阿里云短信服务 for lumen
-
-# lumen-aliyun-sms
 
 阿里云短信服务 for lumen
 
