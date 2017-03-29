@@ -1,7 +1,7 @@
 {
-    "name": "yeoman/laravel-aliyun-sms",
-    "description": "阿里云短信服务 for Laravel",
-    "keywords": ["aliyun", "aliyun-sms", "laravel", "sms", "sdk"],
+    "name": "yeoman/lumen-aliyun-sms",
+    "description": "阿里云短信服务 for lumen",
+    "keywords": ["aliyun", "aliyun-sms", "lumen", "sms", "sdk"],
     "require": {
         "php": ">5.3",
         "yeoman/aliyun-sms": "*"
