@@ -3,7 +3,8 @@
     "description": "阿里云短信服务 for lumen",
     "keywords": ["aliyun", "aliyun-sms", "lumen", "sms", "sdk"],
     "require": {
-        "php": ">5.3"
+        "php": ">5.3",
+        "yeoman/aliyun-sms": "*"
     },
     "autoload": {
         "psr-4": {
