@@ -24,7 +24,7 @@ class AliyunSms {
         $endpoints = array($endpoint);
         EndpointProvider::setEndpoints($endpoints);
 
-        $iClientProfile = DefaultProfile::getProfile('cn-hangzhou', ENV('ALIYUN_SMS_ACCESS_KEY'), ENV('ALIYUN_SMS_ACCESS_SECRET'));
+        $iClientProfile = DefaultProfile::getProfile('cn-hangzhou', ENV('ALIYUN_ACCESS_KEY'), ENV('ALIYUN_ACCESS_SECRET'));
         $client = new DefaultAcsClient($iClientProfile);
         $request = new SingleSendSmsRequest();
         $request->setSignName(ENV('ALIYUN_SMS_SIGN_NAME')); /*签名名称*/
