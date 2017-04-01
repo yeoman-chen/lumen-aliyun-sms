@@ -15,9 +15,9 @@ class AliyunSms {
 
     public function send($mobile, $tplId, $params)
     {
-        define('ENABLE_HTTP_PROXY', env('ALIYUN_SMS_ENABLE_HTTP_PROXY', false));
-        define('HTTP_PROXY_IP',     env('ALIYUN_SMS_HTTP_PROXY_IP', '127.0.0.1'));
-        define('HTTP_PROXY_PORT',   env('ALIYUN_SMS_HTTP_PROXY_PORT', '8888'));
+        defined('ENABLE_HTTP_PROXY') or define('ENABLE_HTTP_PROXY', env('ALIYUN_SMS_ENABLE_HTTP_PROXY', false));
+        defined('HTTP_PROXY_IP') or define('HTTP_PROXY_IP',     env('ALIYUN_SMS_HTTP_PROXY_IP', '127.0.0.1'));
+        defined('HTTP_PROXY_PORT') or define('HTTP_PROXY_PORT',   env('ALIYUN_SMS_HTTP_PROXY_PORT', '8888'));
 
 
         $endpoint = new Endpoint('cn-hangzhou', EndpointConfig::getregionIds(), EndpointConfig::getProducDomains());
