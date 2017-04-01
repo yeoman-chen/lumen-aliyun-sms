@@ -36,9 +36,6 @@ class AliyunSms {
             $response = $client->getAcsResponse($request);
             return $response;
         } catch (ClientException  $e) {
-            echo '客户端错误'."<br/>";
-            echo $e->getErrorCode()."<br/>";
-            echo $e->getErrorMessage()."<br/>";
             app('sms.log')->error('客户端错误');
             app('sms.log')->error('ErrorCode : '.$e->getErrorCode());
             app('sms.log')->error('ErrorMessage : '.$e->getErrorMessage());
